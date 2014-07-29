@@ -51,11 +51,11 @@
 		610EFF0B198810B70013643F /* ERPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERPAppDelegate.m; sourceTree = "<group>"; };
 		610EFF0E198810B70013643F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		610EFF11198810B70013643F /* ControllingSource.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ControllingSource.xcdatamodel; sourceTree = "<group>"; };
-		610EFF13198810B70013643F /* ERPMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ERPMasterViewController.h; sourceTree = "<group>"; };
-		610EFF14198810B70013643F /* ERPMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERPMasterViewController.m; sourceTree = "<group>"; };
-		610EFF16198810B70013643F /* ERPDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ERPDetailViewController.h; sourceTree = "<group>"; };
-		610EFF17198810B70013643F /* ERPDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERPDetailViewController.m; sourceTree = "<group>"; };
-		610EFF19198810B70013643F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		610EFF13198810B70013643F /* ERPMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ERPMasterViewController.h; path = ControllingSource/ERPMasterViewController.h; sourceTree = "<group>"; };
+		610EFF14198810B70013643F /* ERPMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ERPMasterViewController.m; path = ControllingSource/ERPMasterViewController.m; sourceTree = "<group>"; };
+		610EFF16198810B70013643F /* ERPDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ERPDetailViewController.h; path = ControllingSource/ERPDetailViewController.h; sourceTree = "<group>"; };
+		610EFF17198810B70013643F /* ERPDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ERPDetailViewController.m; path = ControllingSource/ERPDetailViewController.m; sourceTree = "<group>"; };
+		610EFF19198810B70013643F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ControllingSource/Images.xcassets; sourceTree = "<group>"; };
 		610EFF1F198810B70013643F /* ControllingSourceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ControllingSourceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		610EFF20198810B70013643F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		610EFF29198810B70013643F /* ControllingSourceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ControllingSourceTests-Info.plist"; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		610EFEED198810B60013643F = {
 			isa = PBXGroup;
 			children = (
-				610EFF01198810B70013643F /* ControllingSource */,
+				61877B27198824BD00212202 /* ViewControllers */,
 				610EFF27198810B70013643F /* ControllingSourceTests */,
 				610EFEF8198810B70013643F /* Frameworks */,
 				610EFEF7198810B70013643F /* Products */,
@@ -125,12 +125,6 @@
 			children = (
 				610EFF0A198810B70013643F /* ERPAppDelegate.h */,
 				610EFF0B198810B70013643F /* ERPAppDelegate.m */,
-				610EFF0D198810B70013643F /* Main.storyboard */,
-				610EFF13198810B70013643F /* ERPMasterViewController.h */,
-				610EFF14198810B70013643F /* ERPMasterViewController.m */,
-				610EFF16198810B70013643F /* ERPDetailViewController.h */,
-				610EFF17198810B70013643F /* ERPDetailViewController.m */,
-				610EFF19198810B70013643F /* Images.xcassets */,
 				610EFF10198810B70013643F /* ControllingSource.xcdatamodeld */,
 				610EFF02198810B70013643F /* Supporting Files */,
 			);
@@ -164,6 +158,28 @@
 				610EFF2A198810B70013643F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61877B27198824BD00212202 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				610EFF13198810B70013643F /* ERPMasterViewController.h */,
+				610EFF14198810B70013643F /* ERPMasterViewController.m */,
+				610EFF16198810B70013643F /* ERPDetailViewController.h */,
+				610EFF17198810B70013643F /* ERPDetailViewController.m */,
+				61877B2A1988253C00212202 /* Resources */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		61877B2A1988253C00212202 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				610EFF0D198810B70013643F /* Main.storyboard */,
+				610EFF19198810B70013643F /* Images.xcassets */,
+				610EFF01198810B70013643F /* ControllingSource */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +321,7 @@
 				610EFF0E198810B70013643F /* Base */,
 			);
 			name = Main.storyboard;
+			path = ControllingSource;
 			sourceTree = "<group>";
 		};
 		610EFF2A198810B70013643F /* InfoPlist.strings */ = {
@@ -477,6 +494,7 @@
 				610EFF33198810B70013643F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		610EFF34198810B70013643F /* Build configuration list for PBXNativeTarget "ControllingSourceTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +503,7 @@
 				610EFF36198810B70013643F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
